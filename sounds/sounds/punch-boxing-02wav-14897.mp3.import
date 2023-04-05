@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/punch-boxing-02wav-14897.mp3-9c88531cf4a8bd3c6b8679b92f93dfdd.mp3str"
+
+[deps]
+
+source_file="res://sounds/punch-boxing-02wav-14897.mp3"
+dest_files=[ "res://.import/punch-boxing-02wav-14897.mp3-9c88531cf4a8bd3c6b8679b92f93dfdd.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

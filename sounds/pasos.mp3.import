@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/pasos.mp3-7fc84da338b5c8b514b518891e4e329d.mp3str"
+
+[deps]
+
+source_file="res://sounds/pasos.mp3"
+dest_files=[ "res://.import/pasos.mp3-7fc84da338b5c8b514b518891e4e329d.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

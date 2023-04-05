@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/cottagecore-17463.mp3-36b4969c5f60d77d03aec2beb63e1bc1.mp3str"
+
+[deps]
+
+source_file="res://sounds/sounds/cottagecore-17463.mp3"
+dest_files=[ "res://.import/cottagecore-17463.mp3-36b4969c5f60d77d03aec2beb63e1bc1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
