@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Objects/Block.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Objects/Pichola.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Objects/PicholaFollower.tscn" type="PackedScene" id=3]
+
+[node name="Pruebas" type="Node2D"]
+
+[node name="Blocks" type="Node" parent="."]
+
+[node name="Block" parent="Blocks" instance=ExtResource( 1 )]
+scale = Vector2( 1361.45, 73.548 )
+
+[node name="Block3" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( 6766, -2718 )
+scale = Vector2( 184.508, -27.8422 )
+
+[node name="Block4" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( -3050, -4289 )
+scale = Vector2( 482.3, 28.6843 )
+
+[node name="Block2" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( -13381, -13078 )
+rotation = 1.57079
+scale = Vector2( 1361.45, 73.548 )
+
+[node name="Block5" parent="Blocks" instance=ExtResource( 1 )]
+position = Vector2( -10511, -20931 )
+rotation = 1.57079
+scale = Vector2( 1461.32, 35.9336 )
+
+[node name="Pichola" parent="." instance=ExtResource( 2 )]
+position = Vector2( -726, -1407 )
+dash_distanece = 2000.0
+RISING_TIME = 0.4
+FALLING_TIME = 0.4
+
+[node name="PicholaFollower" parent="." instance=ExtResource( 3 )]
+position = Vector2( -59, 401 )
+pichola_path = "../Pichola"
+is_visible = true
+
+[node name="Camera" type="Camera2D" parent="PicholaFollower"]
+zoom = Vector2( 10, 10 )
+smoothing_enabled = true
+
+[node name="CamModifiers" type="Node" parent="."]
+
+[node name="Checkpoints" type="Node" parent="."]
+
+[node name="Damage" type="Node" parent="."]

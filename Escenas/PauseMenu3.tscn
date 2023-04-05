@@ -1,0 +1,217 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://fonts/Mulish/Mulish-VariableFont_wght.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://fonts/Fredoka_One/FredokaOne-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scripts/PauseMenu3.gd" type="Script" id=3]
+[ext_resource path="res://images/fondo1_png/Button2Theme.tres" type="Theme" id=4]
+[ext_resource path="res://images/fondo1_png/Wallpaper.tres" type="Texture" id=5]
+[ext_resource path="res://images/fondo1_png/ButtonTheme.tres" type="Theme" id=6]
+[ext_resource path="res://images/fondo1_png/Button3Theme.tres" type="Theme" id=7]
+[ext_resource path="res://images/Ilustración_sin_título (3).png" type="Texture" id=8]
+[ext_resource path="res://sounds/sounds/button-click.mp3" type="AudioStream" id=9]
+
+[sub_resource type="DynamicFont" id=1]
+size = 125
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 75
+outline_size = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 75
+outline_size = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 75
+outline_size = 1
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=6]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("MarginContainer/LabelButtonContainer/Label:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("MarginContainer/LabelButtonContainer/Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "fade_in"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("MarginContainer/LabelButtonContainer/Label:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.6 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0, -200 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("MarginContainer/LabelButtonContainer/Label:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.6 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[node name="PauseMenu3" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D" parent="."]
+visible = false
+scale = Vector2( 0.5, 0.5 )
+
+[node name="TextureRect" type="TextureRect" parent="Node2D"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -394.0
+margin_top = -304.0
+margin_right = 2510.0
+margin_bottom = 1460.0
+texture = ExtResource( 5 )
+expand = true
+
+[node name="Menu" type="TextureRect" parent="."]
+margin_left = -164.0
+margin_top = -37.0
+margin_right = 1135.0
+margin_bottom = 553.0
+texture = ExtResource( 8 )
+expand = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -512.0
+margin_top = -300.0
+margin_right = 512.0
+margin_bottom = 300.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="LabelButtonContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/LabelButtonContainer"]
+margin_right = 1024.0
+
+[node name="Label" type="Label" parent="MarginContainer/LabelButtonContainer"]
+margin_right = 1024.0
+margin_bottom = 152.0
+size_flags_horizontal = 3
+size_flags_vertical = 5
+custom_fonts/font = SubResource( 1 )
+align = 1
+valign = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/LabelButtonContainer/Label"]
+margin_left = 193.0
+margin_top = 276.0
+margin_right = 883.0
+margin_bottom = 577.0
+focus_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+custom_constants/separation = 8
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/LabelButtonContainer/Label/VBoxContainer"]
+margin_right = 690.0
+margin_bottom = 95.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 50
+custom_constants/margin_left = 50
+
+[node name="Button" type="Button" parent="MarginContainer/LabelButtonContainer/Label/VBoxContainer/MarginContainer"]
+margin_left = 50.0
+margin_right = 640.0
+margin_bottom = 95.0
+theme = ExtResource( 6 )
+custom_fonts/font = SubResource( 8 )
+text = "Resume"
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/LabelButtonContainer/Label/VBoxContainer"]
+margin_top = 103.0
+margin_right = 690.0
+margin_bottom = 198.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 50
+custom_constants/margin_left = 50
+
+[node name="Button2" type="Button" parent="MarginContainer/LabelButtonContainer/Label/VBoxContainer/MarginContainer2"]
+margin_left = 50.0
+margin_right = 640.0
+margin_bottom = 95.0
+theme = ExtResource( 4 )
+custom_fonts/font = SubResource( 9 )
+text = "Restart"
+
+[node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/LabelButtonContainer/Label/VBoxContainer"]
+margin_top = 206.0
+margin_right = 690.0
+margin_bottom = 301.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 50
+custom_constants/margin_left = 50
+
+[node name="Button3" type="Button" parent="MarginContainer/LabelButtonContainer/Label/VBoxContainer/MarginContainer3"]
+margin_left = 50.0
+margin_right = 640.0
+margin_bottom = 95.0
+theme = ExtResource( 7 )
+custom_fonts/font = SubResource( 10 )
+text = "Exit"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/RESET = SubResource( 6 )
+anims/fade_in = SubResource( 7 )
+
+[node name="Button" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+
+[connection signal="button_up" from="MarginContainer/LabelButtonContainer/Label/VBoxContainer/MarginContainer/Button" to="." method="_on_Button_button_up"]
+[connection signal="pressed" from="MarginContainer/LabelButtonContainer/Label/VBoxContainer/MarginContainer/Button" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="MarginContainer/LabelButtonContainer/Label/VBoxContainer/MarginContainer2/Button2" to="." method="_on_Button2_pressed"]
+[connection signal="pressed" from="MarginContainer/LabelButtonContainer/Label/VBoxContainer/MarginContainer3/Button3" to="." method="_on_Button3_pressed"]
