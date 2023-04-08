@@ -1,0 +1,474 @@
+[gd_scene load_steps=91 format=2]
+
+[ext_resource path="res://Scripts/Movimentio.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/Animaciones/TocaSuelo/agachado-1.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Animaciones/Caminata/Caminata-4.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Animaciones/SaltoArriba/salta-2.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Animaciones/Picotazo/Picotazo-5.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/Animaciones/Picotazo/Picotazo-1.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/Animaciones/DashAereo/Dash_Aereo-1.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/Animaciones/Caminata/Caminata-6.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/Animaciones/Picotazo/Picotazo-4.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Animaciones/Caminata/Caminata-1.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Animaciones/Dash/Dash-6.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Animaciones/Idle/Caminata-1.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/Animaciones/Dash/Dash-1.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/Animaciones/SaltoAbajo/caida-1.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/Animaciones/Dash/Dash-3.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Animaciones/DashAereo/Dash_Aereo-3.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Animaciones/Picotazo/Picotazo-6.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Animaciones/Picotazo/Picotazo-2.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Animaciones/SaltoAbajo/caida-2.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Animaciones/Dash/Dash-2.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Animaciones/Idle/Caminata-6.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/Animaciones/Idle/Caminata-3.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/Animaciones/WallJump/_Salto_Pared-3.png" type="Texture" id=23]
+[ext_resource path="res://Sprites/Animaciones/SaltoArriba/salta-1.png" type="Texture" id=24]
+[ext_resource path="res://Sprites/Animaciones/Dash/Dash-4.png" type="Texture" id=25]
+[ext_resource path="res://Sprites/Animaciones/Caminata/Caminata-3.png" type="Texture" id=26]
+[ext_resource path="res://Sprites/Animaciones/WallJump/_Salto_Pared-5.png" type="Texture" id=27]
+[ext_resource path="res://Sprites/Animaciones/DashAereo/Dash_Aereo-2.png" type="Texture" id=28]
+[ext_resource path="res://Sprites/Animaciones/Caminata/Caminata-2.png" type="Texture" id=29]
+[ext_resource path="res://Sprites/Animaciones/SaltoAbajo/caida-3.png" type="Texture" id=30]
+[ext_resource path="res://Sprites/Animaciones/DashAereo/Dash_Aereo-6.png" type="Texture" id=31]
+[ext_resource path="res://Sprites/Animaciones/DobleSalto/Doble_Salto-5.png" type="Texture" id=32]
+[ext_resource path="res://Sprites/Animaciones/Dash/Dash-5.png" type="Texture" id=33]
+[ext_resource path="res://Sprites/Animaciones/Caminata/Caminata-7.png" type="Texture" id=34]
+[ext_resource path="res://Sprites/Animaciones/SaltoArriba/salta-4.png" type="Texture" id=35]
+[ext_resource path="res://Sprites/Animaciones/DobleSalto/Doble_Salto-2.png" type="Texture" id=36]
+[ext_resource path="res://Sprites/Animaciones/DashAereo/Dash_Aereo-5.png" type="Texture" id=37]
+[ext_resource path="res://Sprites/Animaciones/DobleSalto/Doble_Salto-1.png" type="Texture" id=38]
+[ext_resource path="res://Sprites/Animaciones/WallJump/_Salto_Pared-1.png" type="Texture" id=39]
+[ext_resource path="res://Sprites/Animaciones/DobleSalto/Doble_Salto-3.png" type="Texture" id=40]
+[ext_resource path="res://Sprites/Animaciones/Caminata/Caminata-5.png" type="Texture" id=41]
+[ext_resource path="res://Sprites/Animaciones/Idle/Caminata-2.png" type="Texture" id=42]
+[ext_resource path="res://Sprites/Animaciones/WallJump/_Salto_Pared-2.png" type="Texture" id=43]
+[ext_resource path="res://Sprites/Animaciones/WallJump/_Salto_Pared-4.png" type="Texture" id=44]
+[ext_resource path="res://Sprites/Animaciones/Idle/Caminata-4.png" type="Texture" id=45]
+[ext_resource path="res://Sprites/Animaciones/DashAereo/Dash_Aereo-4.png" type="Texture" id=46]
+[ext_resource path="res://Sprites/Animaciones/Caminata/Caminata-8.png" type="Texture" id=47]
+[ext_resource path="res://Sprites/Animaciones/Picotazo/Picotazo-3.png" type="Texture" id=48]
+[ext_resource path="res://Sprites/Animaciones/Idle/Caminata-5.png" type="Texture" id=49]
+[ext_resource path="res://Sprites/Animaciones/DobleSalto/Doble_Salto-4.png" type="Texture" id=50]
+[ext_resource path="res://Sprites/Animaciones/SaltoArriba/salta-3.png" type="Texture" id=51]
+[ext_resource path="res://Sprites/Animaciones/EnPared.png" type="Texture" id=52]
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 406.02
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 41.5, 159.969 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 30.625, 26.5 )
+
+[sub_resource type="RectangleShape2D" id=51]
+extents = Vector2( 318, 98.5623 )
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 241.033
+
+[sub_resource type="Animation" id=52]
+resource_name = "En pared"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 52 ) ]
+}
+
+[sub_resource type="Animation" id=32]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 18 ) ]
+}
+
+[sub_resource type="Animation" id=33]
+resource_name = "Salto_pared"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.0487328, 0.0923388, 0.147053, 0.195786 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 39 ), ExtResource( 43 ), ExtResource( 23 ), ExtResource( 44 ), ExtResource( 27 ) ]
+}
+
+[sub_resource type="Animation" id=34]
+resource_name = "bajar_en_aire"
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.104243, 0.3, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 14 ), ExtResource( 19 ), ExtResource( 30 ) ]
+}
+
+[sub_resource type="Animation" id=35]
+resource_name = "chocar_suelo"
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ ExtResource( 2 ) ]
+}
+
+[sub_resource type="Animation" id=37]
+resource_name = "ciclo_de_andar"
+length = 0.75
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 10 ), ExtResource( 29 ), ExtResource( 26 ), ExtResource( 3 ), ExtResource( 41 ), ExtResource( 8 ), ExtResource( 34 ), ExtResource( 47 ) ]
+}
+
+[sub_resource type="Animation" id=38]
+resource_name = "dash"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 13 ), ExtResource( 20 ), ExtResource( 15 ), ExtResource( 25 ), ExtResource( 33 ), ExtResource( 11 ) ]
+}
+
+[sub_resource type="Animation" id=39]
+resource_name = "dash_aereo"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.026517, 0.0581606, 0.451267, 0.497437, 0.55 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 7 ), ExtResource( 28 ), ExtResource( 16 ), ExtResource( 46 ), ExtResource( 37 ), ExtResource( 31 ) ]
+}
+
+[sub_resource type="Animation" id=40]
+resource_name = "estatico_en_aire"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.000854451, 0.0393338, 0.0769586, 0.1274, 0.187357 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 38 ), ExtResource( 36 ), ExtResource( 40 ), ExtResource( 50 ), ExtResource( 32 ) ]
+}
+
+[sub_resource type="Animation" id=41]
+resource_name = "estatico_en_aire"
+
+[sub_resource type="Animation" id=42]
+resource_name = "idle"
+length = 1.5
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.1, 0.3, 0.5, 0.7, 0.9, 1.1, 1.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 12 ), ExtResource( 42 ), ExtResource( 22 ), ExtResource( 45 ), ExtResource( 49 ), ExtResource( 21 ), ExtResource( 42 ) ]
+}
+
+[sub_resource type="Animation" id=43]
+resource_name = "picotazo"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.05, 0.1, 0.25, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 6 ), ExtResource( 18 ), ExtResource( 48 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 17 ) ]
+}
+
+[sub_resource type="Animation" id=44]
+resource_name = "salto"
+length = 0.4
+tracks/0/type = "value"
+tracks/0/path = NodePath("../Sprite:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.00256336, 0.0512961, 0.100058, 0.189065 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ ExtResource( 24 ), ExtResource( 4 ), ExtResource( 51 ), ExtResource( 35 ) ]
+}
+
+[sub_resource type="Animation" id=45]
+resource_name = "subir_en_aire"
+
+[sub_resource type="AnimationNodeTimeScale" id=49]
+
+[sub_resource type="AnimationNodeTransition" id=50]
+input_count = 2
+input_0/name = "Ground"
+input_0/auto_advance = false
+input_1/name = "Air"
+input_1/auto_advance = false
+
+[sub_resource type="AnimationNodeTimeScale" id=53]
+
+[sub_resource type="AnimationNodeTransition" id=46]
+input_count = 3
+input_0/name = "idle"
+input_0/auto_advance = false
+input_1/name = "walking"
+input_1/auto_advance = false
+input_2/name = "touchingFloor"
+input_2/auto_advance = false
+
+[sub_resource type="AnimationNodeAnimation" id=54]
+animation = "En pared"
+
+[sub_resource type="AnimationNodeAnimation" id=55]
+animation = "chocar_suelo"
+
+[sub_resource type="AnimationNodeTransition" id=29]
+input_count = 4
+input_0/name = "doble_salto"
+input_0/auto_advance = false
+input_1/name = "bajando"
+input_1/auto_advance = false
+input_2/name = "salto"
+input_2/auto_advance = false
+input_3/name = "wall_jump"
+input_3/auto_advance = false
+
+[sub_resource type="AnimationNodeAnimation" id=47]
+animation = "ciclo_de_andar"
+
+[sub_resource type="AnimationNodeAnimation" id=30]
+animation = "bajar_en_aire"
+
+[sub_resource type="AnimationNodeAnimation" id=22]
+animation = "dash"
+
+[sub_resource type="AnimationNodeAnimation" id=26]
+animation = "dash_aereo"
+
+[sub_resource type="AnimationNodeTransition" id=23]
+input_count = 2
+input_0/name = "yes"
+input_0/auto_advance = false
+input_1/name = "no"
+input_1/auto_advance = false
+
+[sub_resource type="AnimationNodeAnimation" id=31]
+animation = "doble_salto"
+
+[sub_resource type="AnimationNodeTransition" id=1]
+input_count = 3
+input_0/name = "ground"
+input_0/auto_advance = false
+input_1/name = "air"
+input_1/auto_advance = false
+input_2/name = "on_wall"
+input_2/auto_advance = false
+
+[sub_resource type="AnimationNodeTimeScale" id=8]
+
+[sub_resource type="AnimationNodeAnimation" id=9]
+animation = "idle"
+
+[sub_resource type="AnimationNodeAnimation" id=7]
+animation = "salto"
+
+[sub_resource type="AnimationNodeAnimation" id=27]
+animation = "Salto_pared"
+
+[sub_resource type="AnimationNodeBlendTree" id=48]
+graph_offset = Vector2( -975.302, 90.5463 )
+nodes/DashTimeScale/node = SubResource( 49 )
+nodes/DashTimeScale/position = Vector2( -100, -80 )
+nodes/DashType/node = SubResource( 50 )
+nodes/DashType/position = Vector2( -280, -260 )
+nodes/FallingSpeed/node = SubResource( 53 )
+nodes/FallingSpeed/position = Vector2( -1080, 360 )
+nodes/OnGroundState/node = SubResource( 46 )
+nodes/OnGroundState/position = Vector2( -420, 20 )
+nodes/OnWall/node = SubResource( 54 )
+nodes/OnWall/position = Vector2( -400, 340 )
+nodes/TouchingFloor/node = SubResource( 55 )
+nodes/TouchingFloor/position = Vector2( -760, 120 )
+nodes/air_state/node = SubResource( 29 )
+nodes/air_state/position = Vector2( -620, 300 )
+nodes/andar/node = SubResource( 47 )
+nodes/andar/position = Vector2( -1180, 40 )
+nodes/bajar_aire/node = SubResource( 30 )
+nodes/bajar_aire/position = Vector2( -1380, 360 )
+nodes/dash/node = SubResource( 22 )
+nodes/dash/position = Vector2( -500, -280 )
+nodes/dash_aereo/node = SubResource( 26 )
+nodes/dash_aereo/position = Vector2( -500, -140 )
+nodes/dash_or_not/node = SubResource( 23 )
+nodes/dash_or_not/position = Vector2( 120, 80 )
+nodes/doble_salto/node = SubResource( 31 )
+nodes/doble_salto/position = Vector2( -900, 240 )
+nodes/ground_air_or_wall/node = SubResource( 1 )
+nodes/ground_air_or_wall/position = Vector2( -160, 180 )
+nodes/movement_velocity/node = SubResource( 8 )
+nodes/movement_velocity/position = Vector2( -860, 20 )
+nodes/output/position = Vector2( 420, 80 )
+nodes/parado/node = SubResource( 9 )
+nodes/parado/position = Vector2( -840, -120 )
+nodes/salto/node = SubResource( 7 )
+nodes/salto/position = Vector2( -900, 460 )
+nodes/salto_pared/node = SubResource( 27 )
+nodes/salto_pared/position = Vector2( -900, 620 )
+node_connections = [ "output", 0, "dash_or_not", "DashTimeScale", 0, "DashType", "DashType", 0, "dash", "DashType", 1, "dash_aereo", "FallingSpeed", 0, "bajar_aire", "OnGroundState", 0, "parado", "OnGroundState", 1, "movement_velocity", "OnGroundState", 2, "TouchingFloor", "air_state", 0, "doble_salto", "air_state", 1, "FallingSpeed", "air_state", 2, "salto", "air_state", 3, "salto_pared", "dash_or_not", 0, "DashTimeScale", "dash_or_not", 1, "ground_air_or_wall", "movement_velocity", 0, "andar", "ground_air_or_wall", 0, "OnGroundState", "ground_air_or_wall", 1, "air_state", "ground_air_or_wall", 2, "OnWall" ]
+
+[node name="Pichola" type="KinematicBody2D"]
+collision_layer = 2
+script = ExtResource( 1 )
+dash_distanece = 1200.0
+dash_duration = 0.2
+MAX_SPEED = 4000.0
+ACCEL_TIME = 0.15
+ON_AIR_FACTOR = 1.3
+MAX_JUMP_HEIGHT = -1600.0
+RISING_TIME = 0.3
+FALLING_TIME = 0.3
+SECOND_JUMP_HEIGHT_FACTOR = 1.0
+flipWithVel = false
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.7, 0.7 )
+texture = ExtResource( 18 )
+
+[node name="Shape" type="CollisionShape2D" parent="."]
+shape = SubResource( 5 )
+
+[node name="WallCollision" type="Node2D" parent="."]
+
+[node name="Left" type="Area2D" parent="WallCollision"]
+collision_layer = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WallCollision/Left"]
+position = Vector2( -406, 0 )
+shape = SubResource( 3 )
+
+[node name="Right" type="Area2D" parent="WallCollision"]
+collision_layer = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WallCollision/Right"]
+position = Vector2( 406, 0 )
+shape = SubResource( 3 )
+
+[node name="Cealing" type="Area2D" parent="WallCollision"]
+collision_layer = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WallCollision/Cealing"]
+position = Vector2( 0, -425 )
+shape = SubResource( 2 )
+
+[node name="Floor" type="Area2D" parent="WallCollision"]
+collision_layer = 0
+
+[node name="Shape" type="CollisionShape2D" parent="WallCollision/Floor"]
+position = Vector2( 13, 340.438 )
+shape = SubResource( 51 )
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+shape = SubResource( 4 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../animation_tree_bird")
+"anims/En pared" = SubResource( 52 )
+anims/RESET = SubResource( 32 )
+anims/Salto_pared = SubResource( 33 )
+anims/bajar_en_aire = SubResource( 34 )
+anims/chocar_suelo = SubResource( 35 )
+anims/ciclo_de_andar = SubResource( 37 )
+anims/dash = SubResource( 38 )
+anims/dash_aereo = SubResource( 39 )
+anims/doble_salto = SubResource( 40 )
+anims/estatico_en_aire = SubResource( 41 )
+anims/idle = SubResource( 42 )
+anims/picotazo = SubResource( 43 )
+anims/salto = SubResource( 44 )
+anims/subir_en_aire = SubResource( 45 )
+
+[node name="animation_tree_bird" type="AnimationTree" parent="."]
+tree_root = SubResource( 48 )
+anim_player = NodePath("../AnimationPlayer")
+root_motion_track = NodePath("../Sprite")
+parameters/DashTimeScale/scale = 1.0
+parameters/DashType/current = 0
+parameters/FallingSpeed/scale = 1.0
+parameters/OnGroundState/current = 2
+parameters/air_state/current = 3
+parameters/dash_or_not/current = 1
+parameters/ground_air_or_wall/current = 0
+parameters/movement_velocity/scale = 1.0
