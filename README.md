@@ -23,4 +23,6 @@ We designed this game in two days, and we are considering adding new levels to s
 ## Instalation
 To be able to play the game, you will need [Godot_v3.5.2](https://godotengine.org/download/3.x/linux), once the installation is complete, simply clone this repository or download it, and open the project folder in the Godot engine.
 
+## Try it out
+https://itch.io/jam/student-game-jam/rate/1966784
 
