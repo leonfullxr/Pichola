@@ -1,4 +1,4 @@
-[](https://i.ibb.co/G3zPCZg/eMHWqt.png)
+![Pichola cover](https://img.itch.zone/aW1nLzExNTY3MzgyLnBuZw==/315x250%23c/eMHWqt.png)
 
 # Pichola
 
