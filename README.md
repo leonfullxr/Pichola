@@ -1,3 +1,5 @@
+[](https://i.ibb.co/G3zPCZg/eMHWqt.png)
+
 # Pichola
 
 Pichola is a game designed by me and some other colleagues in a Game Jam, where we won a prize for 'Best Art'.
