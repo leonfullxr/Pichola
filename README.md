@@ -1,4 +1,7 @@
-![Pichola cover](https://img.itch.zone/aW1nLzExNTY3MzgyLnBuZw==/315x250%23c/eMHWqt.png)
+<p align="center">
+  <img src="images/Titulo.png" width="50%">
+</p>
+
 # Pichola
 
 Pichola is a game designed by me and some other colleagues in a Game Jam, where we won a prize for 'Best Art'.
