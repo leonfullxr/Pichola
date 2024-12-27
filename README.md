@@ -1,5 +1,4 @@
 ![Pichola cover](https://img.itch.zone/aW1nLzExNTY3MzgyLnBuZw==/315x250%23c/eMHWqt.png)
-
 # Pichola
 
 Pichola is a game designed by me and some other colleagues in a Game Jam, where we won a prize for 'Best Art'.
@@ -28,3 +27,8 @@ To be able to play the game, you will need [Godot_v3.5.2](https://godotengine.or
 ## Try it out
 https://itch.io/jam/student-game-jam/rate/1966784
 
+## Game Menu Preview
+![Game preview](https://i.ibb.co/qCYV2z5/Screenshot-from-2024-12-27-11-46-37.png)
+
+## Game Preview
+![Game preview](https://i.ibb.co/N1RmwH8/Screenshot-from-2024-12-27-11-48-37.png)
