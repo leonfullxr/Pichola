@@ -16,6 +16,8 @@ We designed this game in two days, and we are considering adding new levels to s
 
 * **[Toni Martí Albons](https://github.com/Toni-Marti)**
 
+* **[Leon Elliott Fuller](https://github.com/leonfullxr)**
+
 * **Jorge Sanchez Lopez**
 
 ## Art Designers:
